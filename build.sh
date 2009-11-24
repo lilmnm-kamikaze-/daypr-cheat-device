@@ -6,6 +6,7 @@
 #-b, --binary     (default)    text files are equivalent to binary files
 #/j/ is the drive letter of your psp the rest is expanitory.
 #btw thanx Demon_child for this lol ;D
+#Btw this is used inplace of psplink sence its a bitch and wont work on a PSP Slim with 5.00 m33-6 
 
 
 make clean || { echo "Clean source as root"; exit 1; }
