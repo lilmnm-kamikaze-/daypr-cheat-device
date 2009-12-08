@@ -158,6 +158,7 @@ void gametxt_enabled()
 	PrintTextColorXY(0, 9, 0xFF0000FF, "  Writing DayPR enabled to Game.txt...\n");
 	sceKernelDelayThread(200000);
 	ClearLineTextColorY(9, 0xFF0000FF, "  Done!\n");
+	sceKernelDelayThread(200000);
 	return;
 }
 
@@ -173,6 +174,7 @@ void gametxt_disabled()
 	PrintTextColorXY(0, 9, 0xFF0000FF, "  Writing DayPR disabled to Game.txt...\n");
 	sceKernelDelayThread(200000);
 	ClearLineTextColorY(9, 0xFF0000FF, "  Done!\n");
+	sceKernelDelayThread(200000);
 	return;
 }
 
@@ -261,7 +263,6 @@ void Yes_No()
 	
 void Install_DayPR()
 	{
-		pspDebugScreenClear();
 		print_title();
 		PrintTextColorXY(0, 7, 0xFF0000FF, "  Installing DayPR.prx to ms0:/seplugins/...");
 		writeFile("ms0:/seplugins/DayPR.prx", DayPR, size_DayPR);
@@ -272,7 +273,6 @@ void Install_DayPR()
 
 void Install_DayPR371()
 	{
-		pspDebugScreenClear();
 		print_title();
 		PrintTextColorXY(0, 7, 0xFF0000FF, "  Installing DayPR.prx to ms0:/seplugins/...");
 		writeFile("ms0:/seplugins/DayPR.prx", DayPR371, size_DayPR371);
@@ -283,7 +283,6 @@ void Install_DayPR371()
 	
 void Install()
 { 
-	pspDebugScreenClear();
   while(1)
     {
 		sceCtrlReadBufferPositive(&pad, 1);
