@@ -283,10 +283,10 @@ void Install_DayPR371()
 	
 void Install()
 { 
+	pspDebugScreenClear();
   while(1)
     {
 		sceCtrlReadBufferPositive(&pad, 1);
-		pspDebugScreenClear();
 		print_title();
 		counter=0;
         while(counter < 5)
